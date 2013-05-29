@@ -1,0 +1,691 @@
+;
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #3b3b3b;
+}
+h1,
+h2,
+h3 {
+  font-family: "gotham rounded", "helvetica neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+h1 a:not(.btn),
+h2 a:not(.btn),
+h3 a:not(.btn) {
+  color: #333;
+  text-decoration: none;
+}
+h1 a:not(.btn):hover,
+h2 a:not(.btn):hover,
+h3 a:not(.btn):hover {
+  color: #333;
+}
+footer {
+  color: #666;
+}
+footer a:not(.btn) {
+  color: #888;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+footer a:not(.btn):hover {
+  border: none;
+}
+footer h3,
+footer h4 {
+  font-size: 16px;
+  color: #888 !important;
+}
+footer h3 a:link,
+footer h4 a:link,
+footer h3 a:visited,
+footer h4 a:visited,
+footer h3 a:active,
+footer h4 a:active {
+  color: #888 !important;
+}
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #3b3b3b;
+}
+h1,
+h2,
+h3 {
+  font-family: "gotham rounded", "helvetica neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+h1 a:not(.btn),
+h2 a:not(.btn),
+h3 a:not(.btn) {
+  color: #333;
+  text-decoration: none;
+}
+h1 a:not(.btn):hover,
+h2 a:not(.btn):hover,
+h3 a:not(.btn):hover {
+  color: #333;
+}
+footer {
+  color: #666;
+}
+footer a:not(.btn) {
+  color: #888;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+footer a:not(.btn):hover {
+  border: none;
+}
+footer h3,
+footer h4 {
+  font-size: 16px;
+  color: #888 !important;
+}
+footer h3 a:link,
+footer h4 a:link,
+footer h3 a:visited,
+footer h4 a:visited,
+footer h3 a:active,
+footer h4 a:active {
+  color: #888 !important;
+}
+.edit .editable {
+  cursor: pointer;
+}
+.edit .editable.editing {
+  cursor: auto;
+}
+.limn-loading {
+  background: url("data:image/gif;base64,R0lGODlhEAALAPQAAP///wAAANra2tDQ0Orq6gYGBgAAAC4uLoKCgmBgYLq6uiIiIkpKSoqKimRkZL6+viYmJgQEBE5OTubm5tjY2PT09Dg4ONzc3PLy8ra2tqCgoMrKyu7u7gAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAAAAAA") no-repeat 50% 50%;
+}
+#limn-messages {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 78%;
+  z-index: 1000;
+  padding: 8px;
+}
+#limn-messages .alert {
+  margin: 8px;
+  -webkit-box-shadow: -2px 2px 6px 2px rgba(0,0,0,0.3);
+  -moz-box-shadow: -2px 2px 6px 2px rgba(0,0,0,0.3);
+  box-shadow: -2px 2px 6px 2px rgba(0,0,0,0.3);
+}
+.limn-modal.modal {
+  margin: 0;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  width: auto;
+  height: auto;
+}
+.limn-modal.modal .modal-body {
+  max-height: none;
+}
+
+;
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #3b3b3b;
+}
+h1,
+h2,
+h3 {
+  font-family: "gotham rounded", "helvetica neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+h1 a:not(.btn),
+h2 a:not(.btn),
+h3 a:not(.btn) {
+  color: #333;
+  text-decoration: none;
+}
+h1 a:not(.btn):hover,
+h2 a:not(.btn):hover,
+h3 a:not(.btn):hover {
+  color: #333;
+}
+footer {
+  color: #666;
+}
+footer a:not(.btn) {
+  color: #888;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+footer a:not(.btn):hover {
+  border: none;
+}
+footer h3,
+footer h4 {
+  font-size: 16px;
+  color: #888 !important;
+}
+footer h3 a:link,
+footer h4 a:link,
+footer h3 a:visited,
+footer h4 a:visited,
+footer h3 a:active,
+footer h4 a:active {
+  color: #888 !important;
+}
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #3b3b3b;
+}
+h1,
+h2,
+h3 {
+  font-family: "gotham rounded", "helvetica neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+h1 a:not(.btn),
+h2 a:not(.btn),
+h3 a:not(.btn) {
+  color: #333;
+  text-decoration: none;
+}
+h1 a:not(.btn):hover,
+h2 a:not(.btn):hover,
+h3 a:not(.btn):hover {
+  color: #333;
+}
+footer {
+  color: #666;
+}
+footer a:not(.btn) {
+  color: #888;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+footer a:not(.btn):hover {
+  border: none;
+}
+footer h3,
+footer h4 {
+  font-size: 16px;
+  color: #888 !important;
+}
+footer h3 a:link,
+footer h4 a:link,
+footer h3 a:visited,
+footer h4 a:visited,
+footer h3 a:active,
+footer h4 a:active {
+  color: #888 !important;
+}
+section.graph-display.graph {
+  position: relative;
+  max-width: 1200px;
+  margin: 3em auto;
+/* * * *  Subnav & Tabs  * * * {{{ */
+/* }}} */
+/* * * *  Graph Details  * * * {{{ */
+/* }}} */
+}
+section.graph-display.graph .graph-name-row {
+  margin-bottom: 1em;
+  zoom: 1;
+}
+section.graph-display.graph .graph-name-row:before,
+section.graph-display.graph .graph-name-row:after {
+  content: "";
+  display: table;
+}
+section.graph-display.graph .graph-name-row:after {
+  clear: both;
+}
+section.graph-display.graph .inner,
+section.graph-display.graph .row {
+  position: relative;
+}
+section.graph-display.graph .row {
+  margin: 1em 0;
+}
+section.graph-display.graph .graph-metric-defs {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  padding: 0.5em 3em 0.5em 1em;
+  margin: 0;
+}
+section.graph-display.graph .graph-metric-defs .graph-metric-def,
+section.graph-display.graph .graph-metric-defs dd,
+section.graph-display.graph .graph-metric-defs dt {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  -webkit-break-inside: avoid;
+  -moz-break-inside: avoid;
+  break-inside: avoid;
+}
+section.graph-display.graph .graph-settings.tabbable .nav {
+  margin-bottom: 0;
+}
+section.graph-display.graph .graph-settings.tabbable .nav li h3 {
+  line-height: 14px;
+  margin: 2px;
+  padding: 8px 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+section.graph-display.graph .graph-settings.tabbable .nav li {
+  margin-right: 4px;
+}
+section.graph-display.graph .graph-settings.tabbable .tab-pane {
+  padding: 0.5em;
+  margin-top: 18px;
+}
+section.graph-display.graph .graph-settings.tabbable .tab-pane.graph-data-pane {
+  margin-top: 0;
+  padding: 0;
+}
+section.graph-display.graph .graph-controls {
+  z-index: 100;
+  margin-top: 2px;
+}
+section.graph-display.graph .graph-controls > .btn,
+section.graph-display.graph .graph-controls > .btn-group {
+  margin: 0 0.5em;
+}
+section.graph-display.graph .graph-controls .btn-group {
+  display: inline-block;
+}
+section.graph-display.graph .graph-controls input[type="button"] {
+  min-width: 5em;
+  text-align: center;
+}
+section.graph-display.graph .graph-permalink {
+  display: inline-block;
+}
+section.graph-display.graph .graph-permalink input {
+  cursor: auto;
+}
+section.graph-display.graph .ug {
+  padding-left: 3em;
+}
+section.graph-display.graph form.graph-details {
+  position: relative;
+}
+section.graph-display.graph form.graph-details .name-row {
+  font-size: 120%;
+  line-height: 2em;
+}
+section.graph-display.graph form.graph-details .name-row input.name {
+  font-size: 120%;
+  line-height: 1.2;
+  height: 1.2em;
+  border-color: #eee;
+  width: 98%;
+}
+section.graph-display.graph form.graph-details .row-fluid .half.control-group {
+  width: 50%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+section.graph-display.graph form.graph-details .row-fluid label {
+  width: 100px;
+}
+section.graph-display.graph form.graph-details .row-fluid .controls {
+  margin-left: 110px;
+}
+section.graph-display.graph form.graph-details .help-block {
+  font-size: 11px;
+  line-height: 1.3;
+}
+@media print {
+  section.graph-display.graph {
+    page-break-after: always;
+  }
+  section.graph-display.graph .legend-node {
+    position: relative;
+  }
+  section.graph-display.graph .graph-permalink {
+    padding: 1em;
+  }
+}
+
+;
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #3b3b3b;
+}
+h1,
+h2,
+h3 {
+  font-family: "gotham rounded", "helvetica neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+h1 a:not(.btn),
+h2 a:not(.btn),
+h3 a:not(.btn) {
+  color: #333;
+  text-decoration: none;
+}
+h1 a:not(.btn):hover,
+h2 a:not(.btn):hover,
+h3 a:not(.btn):hover {
+  color: #333;
+}
+footer {
+  color: #666;
+}
+footer a:not(.btn) {
+  color: #888;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+footer a:not(.btn):hover {
+  border: none;
+}
+footer h3,
+footer h4 {
+  font-size: 16px;
+  color: #888 !important;
+}
+footer h3 a:link,
+footer h4 a:link,
+footer h3 a:visited,
+footer h4 a:visited,
+footer h3 a:active,
+footer h4 a:active {
+  color: #888 !important;
+}
+html,
+body {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #3b3b3b;
+}
+h1,
+h2,
+h3 {
+  font-family: "gotham rounded", "helvetica neue", helvetica, arial, sans-serif;
+  color: #333;
+  font-weight: 300;
+}
+h1 a:not(.btn),
+h2 a:not(.btn),
+h3 a:not(.btn) {
+  color: #333;
+  text-decoration: none;
+}
+h1 a:not(.btn):hover,
+h2 a:not(.btn):hover,
+h3 a:not(.btn):hover {
+  color: #333;
+}
+footer {
+  color: #666;
+}
+footer a:not(.btn) {
+  color: #888;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+footer a:not(.btn):hover {
+  border: none;
+}
+footer h3,
+footer h4 {
+  font-size: 16px;
+  color: #888 !important;
+}
+footer h3 a:link,
+footer h4 a:link,
+footer h3 a:visited,
+footer h4 a:visited,
+footer h3 a:active,
+footer h4 a:active {
+  color: #888 !important;
+}
+section.graph section.canvas-node {
+  height: 100%;
+  position: relative;
+}
+section.graph section.canvas-node .bgcolor {
+  fill: none;
+}
+section.graph section.callout {
+  float: left;
+  z-index: 100;
+  width: 15.385em;
+  padding: 0 6em 0 0;
+  background-color: #fff;
+  text-align: right;
+}
+section.graph section.callout .latest-metric {
+  font-size: 18px;
+  line-height: 36px;
+}
+section.graph section.callout .metric-change {
+  font: 11px/1.5 "helvetica neue", helvetica, arial, sans-serif;
+}
+section.graph section.callout .metric-change span {
+  display: inline-block;
+}
+section.graph section.callout .metric-change span.dates {
+  width: 140px;
+}
+section.graph section.callout .metric-change span.value {
+  width: 60px;
+}
+section.graph section.callout .metric-change span.value.delta-positive {
+  color: #009048;
+}
+section.graph section.callout .metric-change span.value.delta-negative {
+  color: #c9313d;
+}
+section.graph section.canvas-node {
+  position: relative;
+  min-width: 200px;
+  min-height: 320px;
+  margin-bottom: 1.5em;
+  overflow: hidden;
+}
+section.graph section.canvas-node section.meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.graph section.canvas-node section.meta.fg {
+  z-index: 500;
+}
+section.graph section.canvas-node section.meta.bg {
+  z-index: 0;
+}
+section.graph section.canvas-node section.chart {
+  z-index: 100;
+}
+section.graph section.legend-node ~ section.canvas-node {
+  margin-left: 17.385em;
+}
+section.graph section.legend-node li.legend-entry {
+  cursor: pointer;
+}
+section.graph section.legend-node li.legend-entry:hover {
+  background-color: #f5f5f5;
+}
+section.graph section.legend-node {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 14.667em;
+  margin-top: 30px;
+  padding: 1em;
+  background-color: rgba(255,255,255,0.75);
+  font: 12px/1.5 "helvetica neue", helvetica, arial, sans-serif;
+  border: 1px solid #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+section.graph section.legend-node legend {
+  font-size: 14px;
+  margin-bottom: 1em;
+  line-height: 2em;
+}
+section.graph section.legend-node ul,
+section.graph section.legend-node li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+section.graph section.legend-node .entry-label {
+  display: inline-block;
+  width: 9.5em;
+  font-weight: bold;
+}
+section.graph section.legend-node .entry-value .whole {
+  display: inline-block;
+  width: 2.5em;
+  text-align: right;
+}
+section.graph section.legend-node .entry-value .fraction {
+  text-align: left;
+}
+section.graph section.legend-node .entry-value .suffix {
+  text-align: left;
+}
+section.graph section.infobox-node {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  min-width: 300px;
+  padding: 1em;
+  border: 1px solid #eee;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+section.graph section.infobox-node table {
+  margin: 0.75em 0 0 0;
+}
+section.graph section.infobox-node table tr:first-child td {
+  border-top: 0;
+}
+section.graph section.infobox-node .entry-value {
+  text-align: right;
+}
+section.graph section.tweaks-node {
+  position: absolute;
+  width: 16.7em;
+  top: 0.1em;
+}
+section.graph section.tweaks-node section.children {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 199;
+  padding: 0.5em;
+  background-color: #ddd;
+}
+section.graph section.tweaks-node .toggle-children.in {
+  z-index: 201;
+}
+section.graph section.tweaks-node input {
+  width: 50px;
+}
+section.graph section.tweaks-node section.node-node fieldset {
+  border-bottom: dotted 2px #bbb;
+  margin-bottom: 10px;
+}
+section.graph section.tweaks-node section.node-node fieldset legend {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+}
+section.graph section.tweaks-node section.node-node:last-child fieldset {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+section.graph g.zoom-brush-node {
+  stroke: #fff;
+  fill: #000;
+  opacity: 0.225;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=23);
+  shape-rendering: crispEdges;
+}
+section.graph line.verticalGuide {
+  stroke: #cacaca;
+  stroke-width: 1;
+}
+section.graph g.grid-node line {
+  stroke: #cacaca;
+  stroke-width: 0.5;
+}
+section.graph g.axis path {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1;
+}
+section.graph g.axis text {
+  font: 1em "helvetica neue", helvetica, arial, sans-serif;
+  stroke: #cacaca;
+  stroke-width: 0.5;
+}
+section.graph g.viewport path {
+  fill: none;
+}
+
+;
+section.graph-create.graph .pick-datasources select {
+  margin-bottom: 0;
+}
+
+;
+/* * * *  Subnav & Tabs  * * * {{{ */
+.graphs.tabbable .nav {
+  margin-bottom: 0;
+}
+.graphs.tabbable .nav li h3 {
+  line-height: 14px;
+  margin: 2px;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+.graphs.tabbable .nav li {
+  margin-right: 4px;
+}
+.graphs.tabbable .tab-pane {
+  padding: 0.5em;
+  margin-top: 18px;
+}
+/* }}} */
+.dashboard section.dashboard-tab > ol > li {
+  list-style: none;
+}
+.dashboard section.graph {
+  margin: 0 auto;
+  padding: 3.5em 0;
+}
+.dashboard section.graph:first-child {
+  margin-top: 0;
+}
+.dashboard .graph-links-row {
+  display: none;
+}
+
