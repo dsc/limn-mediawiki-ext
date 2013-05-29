@@ -22,7 +22,9 @@ class Limn {
         $vars['wgLimnOptions'] = array(
             'server' => array(
                 'base'          => $wgLimnServerBase,
-                'remoteMode'    => $wgLimnServerRemoteMode,
+            ),
+            'data' => array(
+                'remoteMode'    => $wgLimnDataRemoteMode,
             ),
         );
         

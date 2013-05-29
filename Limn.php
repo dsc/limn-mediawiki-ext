@@ -20,7 +20,7 @@ $wgExtensionCredits['parserhook'][] = array(
     'name'           => 'Limn',
     'version'        => '0.0.1',
     'author'         => 'David Schoonover',
-    'url'            => 'https://www.mediawiki.org/wiki/Analytics/Limn/MediaWiki_Extension',
+    'url'            => 'https://github.com/dsc/limn-mediawiki-ext',
     'description'    => 'Embed Limn visualizations in MediaWiki.',
 );
 
@@ -29,7 +29,7 @@ $wgExtensionCredits['parserhook'][] = array(
 
 $wgLimnServerBase = null;
 
-$wgLimnServerRemoteMode = 'error';
+$wgLimnDataRemoteMode = 'error';
 
 
 // Extension Setup
