@@ -36,7 +36,7 @@ configuration file (`LocalSettings.php` or whatever):
 ```php
 require_once( "$IP/extensions/Limn/Limn.php" );
 $wgLimnServerBase = 'http://dev-reportcard.wmflabs.org/';
-$wgLimnServerRemoteMode = 'proxy';
+$wgLimnDataRemoteMode = 'proxy';
 ```
 
 Given the above, the extension would expect a Limn server running at
